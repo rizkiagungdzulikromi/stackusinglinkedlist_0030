@@ -44,8 +44,14 @@ public:
 		else {
 			Node* current = top;
 			while (current != NULL) {
-				cout <<
+				cout << current->data << " " << endl;
+				current = current - next;
 			}
+			cout << endl;
 		}
+	}
+
+	bool isEmpty() {
+		return top == NULL;
 	}
 };
