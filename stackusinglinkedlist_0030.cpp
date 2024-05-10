@@ -60,5 +60,9 @@ int main() {
 	Stack stack;
 
 	int choice = 0;
-	int 
+	int value;
+
+	while (choice != 5) {
+
+	}
 }
