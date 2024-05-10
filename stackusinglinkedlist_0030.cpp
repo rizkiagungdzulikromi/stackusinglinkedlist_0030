@@ -78,8 +78,28 @@ int main() {
 			break;
 		case 2:
 			if (!stack.isEmpty()) {
-				stack.pop
+				stack.pop();
 			}
+			else {
+				cout << "Stack is empty. Cannot pop." << endl;
+			}
+			break;
+		case 3:
+			if (!stack.isEmpty()) {
+				stack.peek();
+			}
+			else {
+				cout << "Stack is empty. No top value." << endl;
+			}
+			break;
+		case 4:
+			cout << "Exiting program." << endl;
+			break;
+		default:
+			cout << "invalid choice. Try again." << endl;
+			break;
 		}
+
+		cout << endl;
 	}
 }
