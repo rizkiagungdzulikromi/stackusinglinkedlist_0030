@@ -19,6 +19,7 @@ public:
 	Stack() {
 		top = NULL;
 	}
+
 	int push(int value) {
 		Node* newNode = new Node();
 		newNode->data = value;
@@ -31,6 +32,14 @@ public:
 	void pop() {
 		if (isEmpty()) {
 			cout << "Stack is empty." << endl;
+		}
+		cout << "Popped value: " << top->data << endl;
+		top = top->next;
+	}
+
+	void peek() {
+		if (top == NULL) {
+			cout << "list is empty." << endl;
 		}
 	}
 };
